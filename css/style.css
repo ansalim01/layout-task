@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  overflow-x: hidden;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+
+._ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.swiper-main-header__image {
+  width: 100%;
+  height: 100vh;
+}
+
+._ibg img {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+._container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 5px 10px;
+}
+
+.swiper-main-header {
+  /* padding: 30px 0 70px 0; */
+}
+
+.swiper-main-header__body {
+  padding-top: 168px;
+}
+
+.body-swiper-main-header__title {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 78px;
+  line-height: 100%;
+  /* or 78px */
+  text-transform: uppercase;
+  color: #052E4C;
+  margin: 0 0 25px 0;
+}
+.body-swiper-main-header__title span {
+  font-style: italic;
+  font-weight: 600;
+  /* or 78px */
+}
+.body-swiper-main-header__text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131.25%;
+  color: #052E4C;
+  margin: 0 0 48px 0;
+}
+.body-swiper-main-header__button {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130.76%;
+  text-transform: uppercase;
+  color: #052E4C;
+  background: #FFFFFF;
+  padding: 11.5px 24px;
+}
+
+.swiper-main-header__top {
+  position: absolute;
+  top: 56px;
+  right: -40px;
+  z-index: 2;
+  display: inline-block;
+  width: 100%;
+}
+@media (max-width: 1160px) {
+  .swiper-main-header__top {
+    right: 5px;
+  }
+}
+
+.top-swiper-main-header__container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 0 0 0;
+}
+.top-swiper-main-header__bottom {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130.76%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #B84C74;
+  padding: 11.5px 25px;
+  margin-right: 17px;
+}
+.swiper-main-header__arrows {
+  position: absolute;
+  left: auto;
+  bottom: 53px;
+  z-index: 10;
+  width: 100%;
+}
+
+.arrows-swiper-main__container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0 0 0 10px;
+}
+.arrows-swiper-main__arrows-right, .arrows-swiper-main__arrows-left {
+  display: inline-block;
+  position: relative;
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+}
+.arrows-swiper-main__arrows-left {
+  background: url("../img/swiper/r2.svg") 0 50% no-repeat;
+}
+.arrows-swiper-main__pagination {
+  width: 27px;
+  display: inline-block;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #052E4C;
+}
+.arrows-swiper-main__arrows-right {
+  background: url("../img/swiper/r1.svg") 100% 50% no-repeat;
+}/*# sourceMappingURL=style.css.map */
